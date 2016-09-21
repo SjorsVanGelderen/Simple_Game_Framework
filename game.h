@@ -3,9 +3,12 @@
 */
 
 #include <string.h>
+#include <vector>
 #include <SFML/Graphics.hpp>
 
-#include "sprite.h"
+#include "actor.h"
+#include "prop.h"
+#include "body.h"
 
 class Game
 {
@@ -15,7 +18,19 @@ public:
     void Run();
 
 private:
+    void Terminate();
+    
+    void AddActor();
+    void AddProp();
+    void AddBody();
+    
     int width;
     int height;
     std::string title;
+    std::vector<Actor> actors;
+    std::vector<Prop> props;
+    std::vector<Body> bodies;
+
+    sf::Clock clock;
+    sf::RenderWindow* window;
 };

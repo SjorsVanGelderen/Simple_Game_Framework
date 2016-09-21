@@ -4,13 +4,14 @@
 
 #include "game.h"
 
-#define WIDTH 1600
-#define HEIGHT 900
+#define WIDTH 1280
+#define HEIGHT 720
 #define TITLE "Game"
 
 int main()
 {
     Game game(WIDTH, HEIGHT, TITLE);
     game.Run();
-    return 0;
+    
+    return EXIT_SUCCESS;
 }

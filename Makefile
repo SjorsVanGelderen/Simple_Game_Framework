@@ -1,7 +1,7 @@
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -std=c++11
 LDFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
-SOURCES=main.cpp game.cpp sprite.cpp prop.cpp actor.cpp
+SOURCES=main.cpp game.cpp sprite.cpp prop.cpp actor.cpp body.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=app
 

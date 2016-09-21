@@ -13,3 +13,18 @@ Actor::~Actor()
 {
 
 }
+
+void Actor::Update(float _delta_time)
+{
+    
+}
+
+void Actor::RegisterBody()
+{
+    
+}
+
+void Actor::RegisterProp()
+{
+    
+}

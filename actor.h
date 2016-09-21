@@ -7,7 +7,11 @@ class Actor
 public:
     Actor();
     ~Actor();
+    void Update(float _delta_time);
+    void RegisterProp();
+    void RegisterBody();
 
 private:
-    
+    int propID = -1;
+    int bodyID = -1;
 };
